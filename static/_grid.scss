@@ -1,13 +1,19 @@
 body #content {
     margin: 0em 15%;
+
     display: grid;
-    grid-gap: 1em;
+    min-height: 110em;
+
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+
+    align-items: auto;
 
     grid-template-columns: 35fr 65fr;
+    grid-template-rows:  .6fr 3fr 1fr 1fr;
     // grid-template-rows: [about-start] 1fr [about-end quote-start] 1fr [quote-end bubble-start] 1fr [bubble-end];
-    grid-template-rows:  .75fr 3fr 1fr 1fr;
 
-   .contact {
+   .header {
         grid-row: 1/2;
         grid-column: 1/3;
     }

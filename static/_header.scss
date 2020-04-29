@@ -1,7 +1,8 @@
-.contact {
-    $c-contact: $c-green-dark;
+.header {
+    $c-header: $c-green-dark;
+    
     text-align: center;
-    color: $c-contact;
+    color: $c-header;
 
     .name {
         margin: 1em 0 0;
@@ -11,12 +12,8 @@
         line-height: 3rem;
     }
 
-    .info {
+    .contact {
         display: inline-flex;
-        // grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-        // grid-gap: em;
-
-
 
         &__item {
             list-style: none;
@@ -26,7 +23,7 @@
             width: 12em;
 
             &__link {
-                color: $c-contact;
+                color: $c-header;
                 text-decoration: none;
 
                 transition: all .15s ease;
@@ -37,13 +34,12 @@
                 }
 
                 &:visited {
-                    color: $c-contact
+                    color: $c-header
                 }
 
                 &:hover {
-                    color: $c-green-mid;
+                    color: $c-pink;
                     font-size: 1.3rem;
-                    margin-bottom: 1rem;
                 }
 
             }
