@@ -208,9 +208,13 @@
                                                                                                                 clip: rect(0, 0, 0, 0);
                                                                                                                 position: absolute; }
 
-                                                                                                                #content {
-                                                                                                                  margin: 0em 18%; }
+                                                                                                                body {
+                                                                                                                  background-color: #ff6f69; }
 
-                                                                                                                  body {
-                                                                                                                    font-family: sans-serif;
-                                                                                                                    background-color: ivory; }
+                                                                                                                  body #content {
+                                                                                                                    margin: 0em 18%;
+                                                                                                                    color: #ff6f69; }
+
+                                                                                                                    body {
+                                                                                                                      font-family: sans-serif;
+                                                                                                                      background-color: ivory; }

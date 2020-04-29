@@ -1,9 +1,10 @@
 // Setup
-@import './normalize';
-@import './fonts';
-@import './variables';
+@import 'utilities/normalize';
+@import 'utilities/fonts';
+@import 'utilities/variables';
 
 // Content
+@import './bubbles';
 @import './grid';
 
 // General Styles
