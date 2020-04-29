@@ -1,11 +1,52 @@
 .contact {
-    ul {
-        display: flex;
-        list-style-type: row;
+    $c-contact: $c-green-dark;
+    text-align: center;
+    color: $c-contact;
 
-        .li {
-            list-style-type: none;
-            width: 15em;
+    .name {
+        margin: 1em 0 0;
+
+        font-size: 4rem;
+        font-weight: normal;
+        line-height: 3rem;
+    }
+
+    .info {
+        display: inline-flex;
+        // grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        // grid-gap: em;
+
+
+
+        &__item {
+            list-style: none;
+
+            font-family: $f-header;
+            font-size: 1.25rem;
+            width: 12em;
+
+            &__link {
+                color: $c-contact;
+                text-decoration: none;
+
+                transition: all .15s ease;
+
+                .fa-external-link-alt {
+                    font-size: .8rem;
+                    margin-left: .3em;
+                }
+
+                &:visited {
+                    color: $c-contact
+                }
+
+                &:hover {
+                    color: $c-green-mid;
+                    font-size: 1.3rem;
+                    margin-bottom: 1rem;
+                }
+
+            }
         }
 
     }

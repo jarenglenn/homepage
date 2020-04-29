@@ -215,8 +215,8 @@
                                                                                                                     margin: 0em 15%;
                                                                                                                     display: grid;
                                                                                                                     grid-gap: 1em;
-                                                                                                                    grid-template-columns: 3.5fr 6.5fr;
-                                                                                                                    grid-template-rows: 1fr 3fr 1fr 1fr; }
+                                                                                                                    grid-template-columns: 35fr 65fr;
+                                                                                                                    grid-template-rows: 0.75fr 3fr 1fr 1fr; }
                                                                                                                     body #content .contact {
                                                                                                                       grid-row: 1 / 2;
                                                                                                                       grid-column: 1 / 3; }
@@ -233,12 +233,34 @@
                                                                                                                               grid-row: 4 / 5;
                                                                                                                               grid-column: 1 / 3; }
 
-  .contact ul {
-    display: flex;
-    list-style-type: row; }
-    .contact ul .li {
-      list-style-type: none;
-      width: 15em; }
+  .contact {
+    text-align: center;
+    color: #33595c; }
+    .contact .name {
+      margin: 1em 0 0;
+      font-size: 4rem;
+      font-weight: normal;
+      line-height: 3rem; }
+      .contact .info {
+        display: inline-flex; }
+        .contact .info__item {
+          list-style: none;
+          font-family: 'Baloo Tamma 2';
+          font-size: 1.25rem;
+          width: 12em; }
+          .contact .info__item__link {
+            color: #33595c;
+            text-decoration: none;
+            transition: all 0.15s ease; }
+            .contact .info__item__link .fa-external-link-alt {
+              font-size: 0.8rem;
+              margin-left: 0.3em; }
+              .contact .info__item__link:visited {
+                color: #33595c; }
+                .contact .info__item__link:hover {
+                  color: #0c9ca4;
+                  font-size: 1.3rem;
+                  margin-bottom: 1rem; }
 
   body {
     font-family: 'Cabin', sans-serif;
