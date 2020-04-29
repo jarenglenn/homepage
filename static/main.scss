@@ -1,0 +1,13 @@
+// Setup
+@import './normalize';
+@import './fonts';
+@import './variables';
+
+// Content
+@import './grid';
+
+// General Styles
+body {
+    font-family: sans-serif;
+    background-color: $c-cream;
+}

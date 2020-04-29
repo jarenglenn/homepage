@@ -1,20 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    {% if num %}
-        <h1>Hello {{ num }}</h1>
-    {% else %}
-        <h1>Hello number</h1>
-    {% endif %}
-    <form method='POST' action='/'>
-        <input type='text' name='num'>
-        <input type='submit'>
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+{% assets "scss_all" %}
+<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+{% endassets %}
+
+{% endblock %}
+
+
+{% block body %}
+
+<div id="content">
+
+    <div class="quote">
+        <h1>Current Quote</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nihil facilis, maxime consectetur
+            laudantium quaerat, saepe porro sint molestias blanditiis reiciendis expedita voluptatem, ullam deleniti
+            modi placeat quo aliquid iusto!
+        </p>
+        <div>- John Doe</div>
+    </div>
+
+
+    <div class="about">
+        <h1>Jaren Glenn</h1>
+        <img src="https://via.placeholder.com/300">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit corrupti? Veritatis
+            praesentium error, iusto deserunt modi vel ipsum ut voluptate quae voluptatum deleniti distinctio temporibus
+            voluptatem ipsam reiciendis quia.
+        </p>
+    </div>
+
+    <div class="projects">
+
+        <div class="projects__1">
+            <h2>Project 1</h2>
+            <img src="https://via.placeholder.com/100">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem ut neque porro.
+                Placeat cupiditate perspiciatis laboriosam asperiores velit ex vitae assumenda illum enim facilis. Sequi
+                culpa maxime neque quisquam?
+            </p>
+        </div>
+
+        <div class=projects__2">
+            <h2>Project 2</h2>
+            <img src="https://via.placeholder.com/100">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem ut neque porro.
+                Placeat cupiditate perspiciatis laboriosam asperiores velit ex vitae assumenda illum enim facilis. Sequi
+                culpa maxime neque quisquam?
+            </p>
+        </div>
+
+        <div class=projects__3">
+            <h2>Project 3</h2>
+            <img src="https://via.placeholder.com/100">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem ut neque porro.
+                Placeat cupiditate perspiciatis laboriosam asperiores velit ex vitae assumenda illum enim facilis. Sequi
+                culpa maxime neque quisquam?
+            </p>
+        </div>
+
+    </div>
+
+    <div class="bubble-container">
+        <div class="bubble">ReactJS</div>
+        <div class="bubble">Python</div>
+        <div class="bubble">Flask</div>
+        <div class="bubble">HTML & CSS</div>
+        <div class="bubble">Java</div>
+        <div class="bubble">Linux</div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
