@@ -1,0 +1,12 @@
+.contact {
+    ul {
+        display: flex;
+        list-style-type: row;
+
+        .li {
+            list-style-type: none;
+            width: 15em;
+        }
+
+    }
+}

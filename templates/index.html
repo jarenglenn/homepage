@@ -4,7 +4,6 @@
 {% block head %}
 
 {% assets "scss_all" %}
-<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
 <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
 {% endassets %}
 
@@ -14,19 +13,19 @@
 {% block body %}
 
 <div id="content">
-
-    <div class="quote">
-        <h1>Current Quote</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nihil facilis, maxime consectetur
-            laudantium quaerat, saepe porro sint molestias blanditiis reiciendis expedita voluptatem, ullam deleniti
-            modi placeat quo aliquid iusto!
-        </p>
-        <div>- John Doe</div>
+    <div class='contact'>
+        <h1 class="name">Jaren Glenn</h1>
+        <ul>
+            <li class="info">Logan, UT</li>
+            <li class="info">jarenglenn@gmail.com</li>
+            <li class="info">jarenglenn.com</li>
+            <li class="info">(435) 799-4464</li>
+            <li class="info">github.com/jarenglenn</li>
+        </ul>
     </div>
 
-
     <div class="about">
-        <h1>Jaren Glenn</h1>
+        <h1>About Me</h1>
         <img src="https://via.placeholder.com/300">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, reprehenderit corrupti? Veritatis
@@ -67,6 +66,15 @@
             </p>
         </div>
 
+    </div>
+
+    <div class="quote">
+        <h1>Current Quote</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nihil facilis, maxime consectetur
+            laudantium quaerat, saepe porro sint molestias blanditiis reiciendis expedita voluptatem, ullam deleniti
+            modi placeat quo aliquid iusto!
+        </p>
+        <div>- John Doe</div>
     </div>
 
     <div class="bubble-container">
