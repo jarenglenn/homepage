@@ -5,11 +5,9 @@
     color: $c-header;
 
     .name {
-        margin: 1em 0 0;
-
+        margin: 0;
         font-size: 4rem;
         font-weight: normal;
-        line-height: 3rem;
     }
 
     .contact {
@@ -23,6 +21,7 @@
             width: 12em;
 
             &__link {
+                display: inline-block;
                 color: $c-header;
                 text-decoration: none;
 
@@ -40,10 +39,9 @@
                 &:hover {
                     color: $c-pink;
                     font-size: 1.3rem;
+                    transform: translate(0px, -3px);
                 }
-
             }
         }
-
     }
 }

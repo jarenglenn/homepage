@@ -8,7 +8,7 @@
 
     & .project {
         background-color: $c-green-light;
-        border-radius: $box-radius / 2;
+        border-radius: $box-radius;
 
         display: grid;
         grid-template-columns: 1fr 4fr;
@@ -45,8 +45,3 @@
     }
 }
 
-.quote {
-    color: $c-green-dark;
-    background-color: $c-orange;
-    border-radius: $box-radius;
-}
