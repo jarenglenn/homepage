@@ -1,7 +1,10 @@
+.bubble-container {
+    margin-bottom: 2em;
+    height: 100%;
+}
+
 .bubble {
     border-radius: 50%;
-    
-
     position: absolute;
 
     display: flex;
@@ -11,7 +14,7 @@
     max-width: 350px;
     max-height: 350px;
 
-    $bubble-colors: $c-pink, $c-orange, $c-green-light, $c-olive, $c-green-dark, $c-orange;
+    $bubble-colors: $c-pink, $c-orange, $c-green-light, $c-olive, $c-green-dark, $c-pink;
     @for $i from 1 through length($bubble-colors) {
         &:nth-child(#{length($bubble-colors)}n+#{$i}) {
             background-color: nth($bubble-colors, $i);
@@ -30,9 +33,58 @@
             height: nth($sizes, $i);
             width: nth($sizes, $i);
 
+            animation-delay: $i * 1s;
+
         }
     }
+
+    animation: float 8s ease;
+    animation-iteration-count: infinite;;
+
+    &:hover {
+        animation: swing .5s ease;
+        animation-iteration-count: 1;
+    }
 }
+
+@keyframes swing {
+    15% {
+        transform: translateY(-5px);
+    }
+    30% {
+        transform: translateY(5px);
+        transform: scaleX(98%);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    65% {
+        transform: translateY(3px);
+        transform: scaleX(99%);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    25% {
+        transform: translate(-3px, 2px);
+    }
+    50% {
+        transform: translate(3px, -1px);
+    }
+    75% {
+        transform: translate(-3px, -4px);
+    } 
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
 
 
 

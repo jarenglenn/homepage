@@ -10,7 +10,7 @@
 
     grid-template-columns: unquote("[content-s about-s] 60fr [about-e project-s] 40fr [project-e content-e]");
     grid-template-columns: 4fr 6fr;
-    grid-template-rows: unquote("1.5em [content-s header-s] 10em [header-e about-s] 55em [about-e quote-s] 1fr [quote-e bubbles-s] 10em [bubbles-e content-e]");
+    grid-template-rows: unquote("1.5em [content-s header-s] 10em [header-e about-s] 55em [about-e quote-s] 1fr [quote-e bubbles-s] 10em [bubbles-e content-e] 2em");
 
 
    .header {

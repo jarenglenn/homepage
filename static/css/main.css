@@ -208,56 +208,99 @@
                                                                                                                 clip: rect(0, 0, 0, 0);
                                                                                                                 position: absolute; }
 
-                                                                                                                .bubble {
-                                                                                                                  border-radius: 50%;
-                                                                                                                  position: absolute;
-                                                                                                                  display: flex;
-                                                                                                                  justify-content: center;
-                                                                                                                  align-items: center;
-                                                                                                                  max-width: 350px;
-                                                                                                                  max-height: 350px; }
-                                                                                                                  .bubble:nth-child(6n+1) {
-                                                                                                                    background-color: #ff6f69; }
-                                                                                                                    .bubble:nth-child(6n+2) {
-                                                                                                                      background-color: #ffcc5c; }
-                                                                                                                      .bubble:nth-child(6n+3) {
-                                                                                                                        background-color: #94ccb4; }
-                                                                                                                        .bubble:nth-child(6n+4) {
-                                                                                                                          background-color: #ced07d; }
-                                                                                                                          .bubble:nth-child(6n+5) {
-                                                                                                                            background-color: #33595c; }
-                                                                                                                            .bubble:nth-child(6n+6) {
-                                                                                                                              background-color: #ffcc5c; }
-                                                                                                                              .bubble:nth-child(6n+1) {
-                                                                                                                                margin-left: 12%;
-                                                                                                                                margin-top: 0em;
-                                                                                                                                height: 350px;
-                                                                                                                                width: 350px; }
-                                                                                                                                .bubble:nth-child(6n+2) {
-                                                                                                                                  margin-left: 46%;
-                                                                                                                                  margin-top: 10em;
-                                                                                                                                  height: 330px;
-                                                                                                                                  width: 330px; }
-                                                                                                                                  .bubble:nth-child(6n+3) {
-                                                                                                                                    margin-left: 23%;
-                                                                                                                                    margin-top: 28em;
-                                                                                                                                    height: 335px;
-                                                                                                                                    width: 335px; }
-                                                                                                                                    .bubble:nth-child(6n+4) {
-                                                                                                                                      margin-left: 2%;
-                                                                                                                                      margin-top: 42em;
-                                                                                                                                      height: 325px;
-                                                                                                                                      width: 325px; }
-                                                                                                                                      .bubble:nth-child(6n+5) {
-                                                                                                                                        margin-left: 40%;
-                                                                                                                                        margin-top: 49em;
-                                                                                                                                        height: 340px;
-                                                                                                                                        width: 340px; }
-                                                                                                                                        .bubble:nth-child(6n+6) {
-                                                                                                                                          margin-left: 18%;
-                                                                                                                                          margin-top: 63em;
-                                                                                                                                          height: 320px;
-                                                                                                                                          width: 320px; }
+                                                                                                                .bubble-container {
+                                                                                                                  margin-bottom: 2em;
+                                                                                                                  height: 100%; }
+
+                                                                                                                  .bubble {
+                                                                                                                    border-radius: 50%;
+                                                                                                                    position: absolute;
+                                                                                                                    display: flex;
+                                                                                                                    justify-content: center;
+                                                                                                                    align-items: center;
+                                                                                                                    max-width: 350px;
+                                                                                                                    max-height: 350px;
+                                                                                                                    animation: float 8s ease;
+                                                                                                                    animation-iteration-count: infinite; }
+                                                                                                                    .bubble:nth-child(6n+1) {
+                                                                                                                      background-color: #ff6f69; }
+                                                                                                                      .bubble:nth-child(6n+2) {
+                                                                                                                        background-color: #ffcc5c; }
+                                                                                                                        .bubble:nth-child(6n+3) {
+                                                                                                                          background-color: #94ccb4; }
+                                                                                                                          .bubble:nth-child(6n+4) {
+                                                                                                                            background-color: #ced07d; }
+                                                                                                                            .bubble:nth-child(6n+5) {
+                                                                                                                              background-color: #33595c; }
+                                                                                                                              .bubble:nth-child(6n+6) {
+                                                                                                                                background-color: #ff6f69; }
+                                                                                                                                .bubble:nth-child(6n+1) {
+                                                                                                                                  margin-left: 12%;
+                                                                                                                                  margin-top: 0em;
+                                                                                                                                  height: 350px;
+                                                                                                                                  width: 350px;
+                                                                                                                                  animation-delay: 1s; }
+                                                                                                                                  .bubble:nth-child(6n+2) {
+                                                                                                                                    margin-left: 46%;
+                                                                                                                                    margin-top: 10em;
+                                                                                                                                    height: 330px;
+                                                                                                                                    width: 330px;
+                                                                                                                                    animation-delay: 2s; }
+                                                                                                                                    .bubble:nth-child(6n+3) {
+                                                                                                                                      margin-left: 23%;
+                                                                                                                                      margin-top: 28em;
+                                                                                                                                      height: 335px;
+                                                                                                                                      width: 335px;
+                                                                                                                                      animation-delay: 3s; }
+                                                                                                                                      .bubble:nth-child(6n+4) {
+                                                                                                                                        margin-left: 2%;
+                                                                                                                                        margin-top: 42em;
+                                                                                                                                        height: 325px;
+                                                                                                                                        width: 325px;
+                                                                                                                                        animation-delay: 4s; }
+                                                                                                                                        .bubble:nth-child(6n+5) {
+                                                                                                                                          margin-left: 40%;
+                                                                                                                                          margin-top: 49em;
+                                                                                                                                          height: 340px;
+                                                                                                                                          width: 340px;
+                                                                                                                                          animation-delay: 5s; }
+                                                                                                                                          .bubble:nth-child(6n+6) {
+                                                                                                                                            margin-left: 18%;
+                                                                                                                                            margin-top: 63em;
+                                                                                                                                            height: 320px;
+                                                                                                                                            width: 320px;
+                                                                                                                                            animation-delay: 6s; }
+                                                                                                                                            .bubble:hover {
+                                                                                                                                              animation: swing 0.5s ease;
+                                                                                                                                              animation-iteration-count: 1; }
+
+  @keyframes swing {
+    15% {
+      transform: translateY(-5px);   }
+      30% {
+        transform: translateY(5px);
+        transform: scaleX(98%);   }
+        50% {
+          transform: translateY(-3px);   }
+          65% {
+            transform: translateY(3px);
+            transform: scaleX(99%);   }
+            80% {
+              transform: translateY(-2px);   }
+              100% {
+                transform: translateY(0);   }
+}
+
+  @keyframes float {
+    25% {
+      transform: translate(-3px, 2px);   }
+      50% {
+        transform: translate(3px, -1px);   }
+        75% {
+          transform: translate(-3px, -4px);   }
+          100% {
+            transform: translate(0px, 0px);   }
+}
 
   #content {
     margin: 0em 15%;
@@ -267,7 +310,7 @@
     align-items: auto;
     grid-template-columns: [content-s about-s] 60fr [about-e project-s] 40fr [project-e content-e];
     grid-template-columns: 4fr 6fr;
-    grid-template-rows: 1.5em [content-s header-s] 10em [header-e about-s] 55em [about-e quote-s] 1fr [quote-e bubbles-s] 10em [bubbles-e content-e]; }
+    grid-template-rows: 1.5em [content-s header-s] 10em [header-e about-s] 55em [about-e quote-s] 1fr [quote-e bubbles-s] 10em [bubbles-e content-e] 2em; }
     #content .header {
       grid-row: header-s / header-e;
       grid-column: 1 / 3; }
