@@ -2,18 +2,13 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 2em;
-    // flex-direction: column;
-    // justify-content: center;
-
+    
     color: $c-green-dark;
     
 
     & .project {
         background-color: $c-green-light;
         border-radius: $box-radius / 2;
-
-        // margin: 1em 0;
-        padding: 1em 2em;
 
         display: grid;
         grid-template-columns: 1fr 4fr;

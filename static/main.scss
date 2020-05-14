@@ -9,6 +9,7 @@
 @import './header';
 @import './about';
 @import './projects';
+@import './quote.scss';
 
 // General Styles
 body {
@@ -18,4 +19,8 @@ body {
 
 h1, h2 {
     font-family: $f-header;
+}
+
+.content-box {
+    padding: 2em;
 }

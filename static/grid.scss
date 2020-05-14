@@ -1,0 +1,40 @@
+#content {
+    margin: 0em 15%;
+
+    display: grid;
+    min-height: 110em;
+
+    grid-column-gap: .666em;
+    grid-row-gap: 2em;
+
+    align-items: auto;
+
+    grid-template-columns: unquote("[content-s about-s] 35fr [about-e project-s] 65fr [project-e content-e]");
+    grid-template-rows: unquote("[content-s header-s] .6fr [header-e about-s] 3fr [about-e quote-s] .33fr [quote-e bubbles-s] 1fr [bubbles-e content-e]");
+
+
+   .header {
+        grid-row: header-s/header-e;
+        grid-column: content-s/content-e;
+    }
+
+   .about {
+        grid-row: about-s/about-e;
+        grid-column: about-s/about-e;
+    }
+
+   .projects {
+        grid-row: about-s/about-e;
+        grid-column: projects-s/projects-e;
+    }
+
+   .quote {
+        grid-row: quote-s/quote-e;
+        grid-column: 1/5;
+    }
+
+   .bubble-container {
+        grid-row: bubbles-s/bubbles-e;
+        grid-column: content-s/content-e;
+    }
+}
