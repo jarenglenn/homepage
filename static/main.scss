@@ -5,6 +5,7 @@
 
 // Content
 @import './bubbles';
+@import './bubble-canvas.scss';
 @import './grid';
 @import './header';
 @import './about';
@@ -22,5 +23,5 @@ h1, h2 {
 }
 
 .content-box {
-    padding: 2em;
+    padding: 32px;
 }

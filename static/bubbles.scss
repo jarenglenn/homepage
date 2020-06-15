@@ -8,38 +8,55 @@
     position: absolute;
 
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
-    max-width: 350px;
-    max-height: 350px;
+    img {
+        height: auto;
+        width: 180px;
+    }
 
-    $bubble-colors: $c-pink, $c-orange, $c-green-light, $c-olive, $c-green-dark, $c-pink;
+    .bubble-title {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $f-header, sans-serif;
+    }
+
+
+
+    
+
+
+
+    $bubble-colors: $c-pink, $c-orange, $c-green-light, $c-green-dark, $c-green-dark, $c-orange, $c-pink;
     @for $i from 1 through length($bubble-colors) {
         &:nth-child(#{length($bubble-colors)}n+#{$i}) {
             background-color: nth($bubble-colors, $i);
         }
     }
     
-    $left-margins: 12%, 46%, 23%, 2%, 40%, 18%;
-    $top-margins: 0em, 10em, 28em, 42em, 49em, 63em;
-    $sizes: 350px, 330px, 335px, 325px, 340px, 320px;
+    $left-margins: 12%, 46%, 23%, 2%, 48%, 21%, 39%;
+    $top-margins: 0em, 10em, 28em, 42em, 49em, 68em, 81em;
+    $sizes: 360px, 320px, 335px, 325px, 340px, 320px, 340px;
 
     @for $i from 1 through length($left-margins) {
         &:nth-child(#{length($left-margins)}n+#{$i}) {
             margin-left: nth($left-margins, $i);
             margin-top: nth($top-margins, $i);
 
-            height: nth($sizes, $i);
-            width: nth($sizes, $i);
+            height: 340px;
+            width: 340px;
 
             animation-delay: $i * 1s;
 
         }
     }
 
-    animation: float 8s ease;
-    animation-iteration-count: infinite;;
+    // animation: float 8s ease;
+    // animation-iteration-count: infinite;;
 
     &:hover {
         animation: swing .5s ease;
