@@ -1,3 +1,13 @@
+.bubbles-title {
+    font-size: 2vw;
+    font-family: $f-header, sans-serif;
+    color: $c-green-dark;
+
+    width: 100%;
+    border-bottom: 2px $c-green-dark solid;
+    margin: 20px 0px;
+}
+
 .bubble-container {
     margin-bottom: 2em;
     height: 1428px;
@@ -49,8 +59,8 @@
         }
     }
 
-    // animation: float 8s ease;
-    // animation-iteration-count: infinite;;
+    animation: float 8s ease;
+    animation-iteration-count: infinite;;
 
     &:hover {
         animation: swing .5s ease;

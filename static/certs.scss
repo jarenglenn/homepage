@@ -3,4 +3,73 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-top: 2vh;
+
+    .certs-title {
+        font-size: 2vw;
+        font-family: $f-header, sans-serif;
+        color: $c-green-dark;
+
+        width: 100%;
+        border-bottom: 2px $c-green-dark solid;
+        margin-bottom: 20px;
+
+
+    }
+}
+
+.cert {
+    background-color: $c-pink;
+    color: $c-cream;
+    width: 35vw;
+
+    border-radius: 0px;
+    border-top-left-radius: $box-radius;
+    margin-bottom: 50px;
+
+    &-info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        .cert-title {
+            font-family: $f-header, sans-serif;
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+
+        .cert-line {
+            border-left: 2px $c-cream solid;
+            height: 45px;
+
+            margin: 0px 20px;
+        }
+
+        .cert-description {
+            font-family: $f-content, sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 8px;
+        }
+    }
+
+    .cert-img {
+        width: 100%;
+        height: auto;
+
+        border: 8px $c-cream solid;
+        border-radius: $box-radius
+    }
+}
+
+.cert {
+    $cert-colors: $c-pink, $c-pink, $c-green-dark, $c-green-light;
+    $cert-margin-lefts: 200px, -200px, 200px, -200px;
+    @for $i from 1 through length($cert-colors) {
+        &:nth-child(#{length($cert-colors)}n+#{$i}) {
+            background-color: nth($cert-colors, $i);
+            margin-left: nth($cert-margin-lefts, $i);
+        }
+    }
 }

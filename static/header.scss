@@ -3,6 +3,9 @@ $c-header: $c-green-dark;
 .header {
     text-align: center;
     color: $c-header;
+
+    border-bottom: 1px $c-green-dark solid;
+    margin-bottom: 20px;
 }
 
 .name {
