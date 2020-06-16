@@ -1,46 +1,46 @@
+$c-header: $c-green-dark;
+
 .header {
-    $c-header: $c-green-dark;
-    
     text-align: center;
     color: $c-header;
+}
 
-    .name {
-        margin: 0;
-        font-size: 4rem;
-        font-weight: normal;
-    }
+.name {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: normal;
+}
 
-    .contact {
-        display: inline-flex;
+.contact {
+    display: inline-flex;
 
-        &__item {
-            list-style: none;
+    &-item {
+        list-style: none;
 
-            font-family: $f-header;
-            font-size: 1.25rem;
-            width: 12em;
+        font-family: $f-header;
+        font-size: 1.25rem;
+        width: 12em;
 
-            &__link {
-                display: inline-block;
-                color: $c-header;
-                text-decoration: none;
+        &-link {
+            display: inline-block;
+            color: $c-header;
+            text-decoration: none;
 
-                transition: all .15s ease;
+            transition: all .15s ease;
 
-                .fa-external-link-alt {
-                    font-size: .8rem;
-                    margin-left: .3em;
-                }
+            .fa-external-link-alt {
+                font-size: .8rem;
+                margin-left: .3em;
+            }
 
-                &:visited {
-                    color: $c-header
-                }
+            &:visited {
+                color: $c-header
+            }
 
-                &:hover {
-                    color: $c-pink;
-                    font-size: 1.3rem;
-                    transform: translate(0px, -3px);
-                }
+            &:hover {
+                color: $c-pink;
+                font-size: 1.3rem;
+                transform: translate(0px, -3px);
             }
         }
     }
